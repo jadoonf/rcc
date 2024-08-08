@@ -13,6 +13,12 @@ jobs:
         name: Build
         runs-on: ubuntu-latest
         steps:
+
+            - uses: listendev/action@v0.10
+              with:
+                  jwt: ${{ secrets.LSTN_API_KEY }}
+
+
             - uses: actions/setup-go@v5
               with:
                   go-version: '1.20.x'
