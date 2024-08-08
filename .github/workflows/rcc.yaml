@@ -17,6 +17,7 @@ jobs:
             - uses: listendev/action@v0.10
               with:
                   jwt: ${{ secrets.LSTN_API_KEY }}
+                  ci: only
 
 
             - uses: actions/setup-go@v5
